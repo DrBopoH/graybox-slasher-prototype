@@ -36,9 +36,11 @@ Parties act as individuals, not as legal entities.
 * **Future Intentions**: **Client party** declares an **intention, not obligation**, to consider **Developer party** for a long-term role or further hiring upon successful project funding or expansion.
 
 ## Digital Consensus
-By committing this document to the repository (or editing the table below via a commit), both parties confirm that they have read, understood, and agreed to the terms above. The Git commit history serves as the timestamp and proof of identity.
+By editing the table below via a commit, both parties confirm that they have read, understood, and agreed to the terms above. The Git commit history serves as the timestamp and proof of identity.
 
 | Party | GitHub | Date of Signing |
 | :--- | :--- | :--- |
 | **Developer** | @DrBopoH | 2026.02.06 |
 | **Client** | @ | ----.--.-- |
+
+* Work on the project continues provided that the signing date is equal to or later than the update date.
