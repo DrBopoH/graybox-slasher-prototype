@@ -1,18 +1,16 @@
-### Terms of Contract
+# Terms of Contract
 > **Payment**: $200 ----.--.--
 > **Scope**: Graybox prototype
 > **Goal**: StateMachine & Combat demonstration
-* **Deadline**: Best-effort delivery within March 2026
+> **Deadline**: Best-effort delivery within March 2026
 > **Updated**: 2026.02.06
 
 ## Participants
 This agreement is established between the following parties identified by their GitHub accounts:
 * **Client party**:
-	* Name: []
 	* Account: [](https://github.com/)
 * **Developer party**:
-	* Name: [Δρ.ΒοροΝ]
-	* Account: [DrBopoH](https://github.com/DrBopoH)
+	* Account: [Δρ.ΒοροΝ](https://github.com/DrBopoH)
 
 Parties act as individuals, not as legal entities.
 
@@ -30,17 +28,17 @@ Parties act as individuals, not as legal entities.
 		* The **Developer party** retains the right to include this work in their portfolio, use the created materials commercially, and independently develop the project as their own after payment.
 		* The transfer of rights to the project takes place after receipt of the agreed payment.
 
-**Payment Condition**: Payment is released upon delivery of the prototype matching the scope defined in `README.md`
-**Method**: [].
+* **Payment Condition**: Payment is released upon delivery of the prototype matching the scope defined in `README.md`.
+* **Method**: .
 
-## Collaboration 
+### Collaboration 
 * **Current Status**: **Developer party** acts as an independent external contractor (Outsource).
 * **Future Intentions**: **Client party** declares an **intention, not obligation**, to consider **Developer party** for a long-term role or further hiring upon successful project funding or expansion.
 
 ## Digital Consensus
 By committing this document to the repository (or editing the table below via a commit), both parties confirm that they have read, understood, and agreed to the terms above. The Git commit history serves as the timestamp and proof of identity.
 
-| Party | GitHub Handle | Date of Signing |
+| Party | GitHub | Date of Signing |
 | :--- | :--- | :--- |
-| **Developer party** | @DrBopoH | 2026.02.06 |
-| **Client party** | @ | ----.--.-- |
+| **Developer** | @DrBopoH | 2026.02.06 |
+| **Client** | @ | ----.--.-- |

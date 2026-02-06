@@ -1,4 +1,4 @@
-### Technical Task: Slasher Combat System prototype
+# Technical Task: Slasher Combat System prototype
 ## Manifest
 - Engine    - Godot `3.6.2`, GDScript
 - Modeling  - Blender `5.0.1`
@@ -9,14 +9,14 @@
 
 
 ## Details
-# Vertical slice
+### Vertical slice
 - 1 entity class
 - 1 weapon class
 - 1 plane level
 - Movement: PathFinder for enemies, CharacterController for player
 - Render: smooth CameraController following, soft entity focusing, lock-on focus
 
-# Controls
+### Controls
 - Player movement: `W` `A` `S` `D` & `Up` `Left` `Down` `Right` / `Left Stick`
 - Lock-on focusing: `Middle mouse` / `RB`
 - Jump: `Space` / `A`
@@ -24,7 +24,7 @@
 - Lightweight atеack: `LMB` / `X`
 - Heavyweight attack: `RMB` / `Y`
 
-# Battle logic
+### Battle logic
 - Combo system: 
 	Chain attack logics defined in State Machine. 
 	Input Buffering (combo continues if input is within the specific timing window).
@@ -49,11 +49,9 @@
 
 
 ## Source of Technical Task
-<details> <summary>Click to expand full requirements (Ukrainian)</summary>
 Primary source:
 - Original Technical Task (Google Docs):
 	https://docs.google.com/document/d/1UD4D4OrCbGcKj_opywPuezKiIAMnRZtPFuSVXcsSnT8/edit?usp=drivesdk
 
 Any changes to the original document do not retroactively affect the scope
 defined in this repository unless explicitly agreed and committed.
-</details>
