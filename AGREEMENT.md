@@ -41,6 +41,6 @@ By editing the table below via a commit, both parties confirm that they have rea
 | Party | GitHub | Date of Signing |
 | :--- | :--- | :--- |
 | **Developer** | @DrBopoH | 2026.02.07 |
-| **Client** | @Lividessa | ----.--.-- |
+| **Client** | @Lividessa | 2026.02.07 |
 
 * Work on the project continues provided that the signing date is equal to or later than the update date.
