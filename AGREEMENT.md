@@ -3,12 +3,12 @@
 > **Scope**: Graybox prototype
 > **Goal**: StateMachine & Combat demonstration
 > **Deadline**: Best-effort delivery within March 2026
-> **Updated**: 2026.02.06
+> **Updated**: 2026.02.07
 
 ## Participants
 This agreement is established between the following parties identified by their GitHub accounts:
 * **Client party**:
-	* Account: [](https://github.com/Lividessa)
+	* Account: [Lividessa](https://github.com/Lividessa)
 * **Developer party**:
 	* Account: [Δρ.ΒοροΝ](https://github.com/DrBopoH)
 
@@ -29,7 +29,7 @@ Parties act as individuals, not as legal entities.
 		* The transfer of rights to the project takes place after receipt of the agreed payment.
 
 * **Payment Condition**: Payment is released upon delivery of the prototype matching the scope defined in `README.md`.
-* **Method**: .
+* **Method**: Bank Transfer (SWIFT IBAN).
 
 ### Collaboration 
 * **Current Status**: **Developer party** acts as an independent external contractor (Outsource).
@@ -40,7 +40,7 @@ By editing the table below via a commit, both parties confirm that they have rea
 
 | Party | GitHub | Date of Signing |
 | :--- | :--- | :--- |
-| **Developer** | @DrBopoH | 2026.02.06 |
+| **Developer** | @DrBopoH | 2026.02.07 |
 | **Client** | @Lividessa | ----.--.-- |
 
 * Work on the project continues provided that the signing date is equal to or later than the update date.
