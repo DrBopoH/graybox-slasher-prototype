@@ -8,7 +8,7 @@
 ## Participants
 This agreement is established between the following parties identified by their GitHub accounts:
 * **Client party**:
-	* Account: [](https://github.com/)
+	* Account: [](https://github.com/Lividessa)
 * **Developer party**:
 	* Account: [Δρ.ΒοροΝ](https://github.com/DrBopoH)
 
@@ -41,6 +41,6 @@ By editing the table below via a commit, both parties confirm that they have rea
 | Party | GitHub | Date of Signing |
 | :--- | :--- | :--- |
 | **Developer** | @DrBopoH | 2026.02.06 |
-| **Client** | @ | ----.--.-- |
+| **Client** | @Lividessa | ----.--.-- |
 
 * Work on the project continues provided that the signing date is equal to or later than the update date.
