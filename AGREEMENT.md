@@ -20,7 +20,7 @@ Parties act as individuals, not as legal entities.
 		* Character Controller & State Machine architecture.
 		* Combat system (Combos, Hitbox/Hurtbox, Lock-on).
 		* Test level with dummy enemies.
-		* *Reference Commit*: Work is based on requirements fixed in commit [HASH].
+		* *Reference Commit*: Work is based on requirements fixed in commit [Update AGREEMENT.md](https://github.com/DrBopoH/graybox-slasher-prototype/commit/988c5a7d6f870c1466ce15bc2b97ff582c3edc10).
 
 * **Client party** agrees to pay the **Developer party** $200 for the work.
 	* **License** for the Work includes:
