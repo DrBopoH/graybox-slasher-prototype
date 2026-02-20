@@ -21,7 +21,6 @@ func _physics_process(delta):
 		rotation.y = lerp_angle(rotation.y, target_rotation, delta * 15.0)
 	
 	if is_on_floor():
-		print(target.y)
 		if direction.y > 0:
 			velocity.y += direction.y*4.3
 	else:

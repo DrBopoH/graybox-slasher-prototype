@@ -54,6 +54,3 @@ func _input(event):
 
 func _process(delta):
 	camera_gimbal.translation = $Player.translation
-	#camera_gimbal.translation.x = move_toward(camera_gimbal.translation.x, $Player.translation.x, delta*5)
-	#camera_gimbal.translation.y = move_toward(camera_gimbal.translation.y, $Player.translation.y, delta*5)
-	#camera_gimbal.translation.z = move_toward(camera_gimbal.translation.z, $Player.translation.z, delta*5)
