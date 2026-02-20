@@ -53,6 +53,7 @@ func _input(event):
 			mouse_toggle_capture()
 
 func _process(delta):
-	camera_gimbal.position.x = move_toward(camera_gimbal.translation.x, $Player.translation.x, delta*5)
-	camera_gimbal.position.y = move_toward(camera_gimbal.translation.y, $Player.translation.y, delta*5)
-	camera_gimbal.position.z = move_toward(camera_gimbal.translation.z, $Player.translation.z, delta*5)
+	camera_gimbal.translation = $Player.translation
+	#camera_gimbal.translation.x = move_toward(camera_gimbal.translation.x, $Player.translation.x, delta*5)
+	#camera_gimbal.translation.y = move_toward(camera_gimbal.translation.y, $Player.translation.y, delta*5)
+	#camera_gimbal.translation.z = move_toward(camera_gimbal.translation.z, $Player.translation.z, delta*5)

@@ -2,6 +2,7 @@
 
 [sub_resource type="ProceduralSky" id=1]
 radiance_size = 4
+sky_top_color = Color( 0.855, 0.91675, 0.95, 1 )
 texture_size = 4
 
 [resource]
