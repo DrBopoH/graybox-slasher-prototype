@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sources/Scripts/main.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Data/Levels/Level0.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Data/Characters/Player.tscn" type="PackedScene" id=4]
+
+[node name="main" type="Node"]
+script = ExtResource( 1 )
+viewmode = 1
+player_path = NodePath("Player")
+camera_path = NodePath("Camera")
+
+[node name="Level0" parent="." instance=ExtResource( 2 )]
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, -11 )
+
+[node name="Camera" type="Camera" parent="."]
+current = true

@@ -1,56 +1,40 @@
 extends Node
 
-var camera := Camera.new()
-var camera_gimbal := Spatial.new()
-var inner_gimbal := Spatial.new()
-var spring_arm := SpringArm.new()
+enum CameraModes {FollowEntity, FreeFlying}
+enum ViewModes {FirstPerson, ThirdPerson}
+
+export(ViewModes) var viewmode
+export(CameraModes) var cameramode
+
+export(NodePath) var player_path
+export(NodePath) var camera_path
+
+var player: KinematicBody
+var camera: Camera
+
+var CameraController: CameraMouseController
+
+var PlayerController := CharacterController.new()
 
 func _ready():
-	camera.translation.z = 3
-	camera.current = true
+	player = get_node(player_path)
 	
-	spring_arm.margin = 0.5
-	spring_arm.spring_length = 3
+	camera = get_node(camera_path)
+	self.remove_child(camera)
 	
-	spring_arm.add_child(camera)
-	inner_gimbal.add_child(spring_arm)
-	camera_gimbal.add_child(inner_gimbal)
-	add_child(camera_gimbal)
+	match viewmode:
+		ViewModes.FirstPerson: CameraController = FirstPersonCamera.new()
+		ViewModes.ThirdPerson: CameraController = ThirdPersonCamera.new()
 	
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-
-func mouse_toggle_capture():
-	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
-		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	else:
-		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-
-func get_global_direction(local_direction: Vector3) -> Vector3:
-	return camera_gimbal.global_transform.basis * local_direction
-
-func get_global_direction2d(local_direction: Vector3) -> Vector3:
-	return camera_gimbal.global_transform.basis.x * local_direction.x + camera_gimbal.global_transform.basis.z * local_direction.z
-
-func camera_rotate(relative: Vector2):
-	camera_gimbal.rotate_y(deg2rad(-relative.x))
-	inner_gimbal.rotate_x(deg2rad(-relative.y))
-
-func clamp_camera_x_rotation():
-	var cam_rotation = inner_gimbal.rotation_degrees
-	cam_rotation.x = clamp(cam_rotation.x, -60, 45)
-	inner_gimbal.rotation_degrees = cam_rotation
-
-func camera_shapemove_rotate(relative: Vector2):
-	camera_rotate(relative)
-	clamp_camera_x_rotation()
+	self.add_child(CameraController)
+	CameraController.add_camera(camera)
+	
+	match cameramode:
+		CameraModes.FollowEntity:
+			CameraController.link_entity(player)
+			PlayerController.link_entity(player)
+		CameraModes.FreeFlying:
+			PlayerController.link_entity(CameraController)
 
 func _input(event):
-	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
-		camera_shapemove_rotate(event.relative)
-	
-	if event is InputEventKey and event.scancode == KEY_ALT:
-		if event.is_pressed(): 
-			mouse_toggle_capture()
-
-func _process(delta):
-	camera_gimbal.translation = $Player.translation
+	PlayerController.handle_input(camera)

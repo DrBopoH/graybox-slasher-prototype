@@ -8,10 +8,74 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Resource",
+"class": "CameraControllerTres",
+"language": "GDScript",
+"path": "res://Sources/Domain/Resources/CameraControllerTres.gd"
+}, {
+"base": "Reference",
+"class": "CameraMath",
+"language": "GDScript",
+"path": "res://Sources/Domain/Math/CameraMath.gd"
+}, {
+"base": "KinematicBody",
+"class": "CameraMouseController",
+"language": "GDScript",
+"path": "res://Sources/Runtime/Controllers/CameraMouseController.gd"
+}, {
+"base": "Reference",
+"class": "CharacterController",
+"language": "GDScript",
+"path": "res://Sources/Domain/Components/CharacterController.gd"
+}, {
+"base": "KinematicBody",
+"class": "Entity",
+"language": "GDScript",
+"path": "res://Sources/Runtime/Objects/Entity.gd"
+}, {
+"base": "CameraMouseController",
+"class": "FirstPersonCamera",
+"language": "GDScript",
+"path": "res://Sources/Runtime/Controllers/FirstPersonCamera.gd"
+}, {
+"base": "Reference",
+"class": "MouseControl",
+"language": "GDScript",
+"path": "res://Sources/Domain/Adapters/MouseControl.gd"
+}, {
+"base": "Reference",
+"class": "StateMachine",
+"language": "GDScript",
+"path": "res://Sources/Domain/Components/StateMachine.gd"
+}, {
+"base": "CameraMouseController",
+"class": "ThirdPersonCamera",
+"language": "GDScript",
+"path": "res://Sources/Runtime/Controllers/ThirdPersonCamera.gd"
+}, {
+"base": "Reference",
+"class": "TreeControl",
+"language": "GDScript",
+"path": "res://Sources/Domain/Adapters/TreeControl.gd"
+} ]
+_global_script_class_icons={
+"CameraControllerTres": "",
+"CameraMath": "",
+"CameraMouseController": "",
+"CharacterController": "",
+"Entity": "",
+"FirstPersonCamera": "",
+"MouseControl": "",
+"StateMachine": "",
+"ThirdPersonCamera": "",
+"TreeControl": ""
+}
+
 [application]
 
 config/name="Graybox Slasher Prototype"
-run/main_scene="res://Sources/Scripts/main.tscn"
+run/main_scene="res://Sources/main.tscn"
 config/icon="res://App/icon.png"
 
 [gui]
@@ -48,9 +112,49 @@ ui_down={
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
  ]
 }
-ui_focus={
+lock_on={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":3,"canceled":false,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+heavy_attack={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":2,"canceled":false,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+light_attack={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+move_forward={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":87,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+move_left={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":65,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+move_back={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+move_right={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":68,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+dodge={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777237,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+jump={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
  ]
 }
 

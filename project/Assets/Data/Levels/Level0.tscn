@@ -25,11 +25,13 @@ albedo_color = Color( 1, 0, 0, 1 )
 [sub_resource type="BoxShape" id=13]
 
 [sub_resource type="BoxShape" id=15]
+extents = Vector3( 1, 1.5, 1 )
 
 [sub_resource type="CubeMesh" id=5]
 size = Vector3( 2, 3, 2 )
 
 [sub_resource type="BoxShape" id=16]
+extents = Vector3( 1, 1.5, 1 )
 
 [sub_resource type="BoxShape" id=17]
 
@@ -47,6 +49,7 @@ albedo_color = Color( 1, 1, 0, 1 )
 [sub_resource type="BoxShape" id=22]
 
 [sub_resource type="BoxShape" id=23]
+extents = Vector3( 1, 1.5, 1 )
 
 [sub_resource type="BoxShape" id=35]
 
@@ -65,12 +68,16 @@ albedo_color = Color( 1, 1, 0, 1 )
 [sub_resource type="BoxShape" id=30]
 
 [sub_resource type="BoxShape" id=32]
+extents = Vector3( 1, 1.5, 1 )
 
 [sub_resource type="BoxShape" id=33]
+extents = Vector3( 1, 1.5, 1 )
 
 [sub_resource type="BoxShape" id=31]
+extents = Vector3( 1, 1.5, 1 )
 
 [sub_resource type="BoxShape" id=34]
+extents = Vector3( 1, 1.5, 1 )
 
 [node name="Level0" type="Spatial"]
 
